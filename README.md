@@ -44,7 +44,7 @@ was uploaded to Github due to size limitations.
 ## Objective
 
 The goal of this project was not so much to build a high performing prediction model than it was to build an end to end machine learning ops pipeline;
-the emphasis was less on feature engineering and hyperparameter tuning and more on model deployment, experimentation and tracking, monitoring and serving. Additionally, the other aspects of software engineering were also explored, such as: adding test cases, integration tests, quality checks and precommit hooks and github action.
+the emphasis was less on feature engineering and hyperparameter tuning and more on model deployment, experimentation and tracking, monitoring and serving. Additionally, the other aspects of software engineering were also explored, such as: adding test cases, integration tests, quality checks and precommit hooks and CI/CD via github action.
 
 ## MLOps pipeline
 
