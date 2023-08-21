@@ -54,7 +54,8 @@ the emphasis was less on feature engineering and hyperparameter tuning and more 
 
 ### Model serving
 
-The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-compose) and can be easily deployed via the following steps:
+Install docker and docker-compose for your OS before building the MLOps pipeline because the solution is fully dockerised. The steps to serve
+the model inside a docker container are listed below:
 
 1. Clone the `credit_churn_predicton` repository locally:
 
@@ -96,7 +97,9 @@ The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-c
     ```
     This will used the model that has already been trained, and which is stored on disk
 
-5. Launch grafana at http://127.0.0.1:3000
+5. Launch grafana at http://127.0.0.1:3000. The default user and password are grafana. Change the password upon logging in. Once
+   inside the console, select the `Evidently Data Drift Dashboard` and wait for a few seconds for the data to refresh as the window
+   size is 50.
 
     ![MLOps architecture](assets/MLOps_architecture.drawio.png)
 

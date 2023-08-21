@@ -7,6 +7,9 @@ hw6/__*
 
 #pycache
 hw6/scripts/__pycache__
+scripts/__pycache__/
+services/__pycache__/
+tests/__pycache__/
 
 #macos
 .DS_Store
