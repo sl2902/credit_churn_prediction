@@ -32,6 +32,7 @@ clean: ## Clean environment
 	# @docker container prune
 	# @docker rmi -f image $(docker image ls -q)
 	@docker-compose down -v
+	@docker-compose down --rmi=all
 
 unit_tests: ## Run the unit tests
 	@python -m pytest tests
