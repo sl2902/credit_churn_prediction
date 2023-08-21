@@ -30,7 +30,7 @@ stop: ## Stop MLOps pipeline environment
 clean: ## Clean environment
 	# @docker container stop $(docker container ls -q)
 	# @docker container prune
-	@docker rmi -f image $(docker image ls -q)
+	# @docker rmi -f image $(docker image ls -q)
 	@docker-compose down -v
 
 unit_tests: ## Run the unit tests
