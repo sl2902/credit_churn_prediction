@@ -180,3 +180,19 @@ Once done, you can shutdown the docker services
 ## Pre-commit hooks
 
 1. Pre-commit hooks, including sorting, formatting, linting and unit tests are run with every commit to the repository.
+
+## CI/CD
+
+1. A git pull will trigger the CI pipeline; it does the following:
+
+   - Prepares the environment and install the dependencies
+   - Runs the unit tests
+   - Runs the quality checks
+   - Builds and runs the docker container services for the integration tests
+   - Runs the integration tests
+
+## References
+
+[1] https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK
+[2] https://github.com/minio/blog-assets/tree/main
+[3] https://github.com/evidentlyai/evidently/tree/main/examples/integrations/grafana_monitoring_service
