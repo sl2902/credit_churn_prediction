@@ -63,7 +63,7 @@ the model inside a docker container are listed below:
     git clone https://github.com/sl2902/credit_churn_prediction.git
     ```
 
-2. Prepare your environment to run the pipeline:
+2. This project was built using Python 3.8.3. If your version is different, make sure to change the version in the `Pipfile` before you prepare the     environment to run the pipeline:
 
     ```
     cd credit_churn_prediction
