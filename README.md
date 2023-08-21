@@ -90,20 +90,14 @@ the model inside a docker container are listed below:
     |mlflow_db  				  |     5432|Postgres database						  |
     |capstone_mongo_1             |    27018|Mongo database							  |
 
-4. Run the flow
-
-    ```
-    make train
-    ```
-
-5. Send traffic to the app service
+4. Send traffic to the app service
 
     ```
     make post_request
     ```
     This will used the model that has already been trained, and which is stored on disk
 
-6. Launch grafana at http://127.0.0.1:3000. The default user and password are admin. Change the password upon logging in. Once
+5. Launch grafana at http://127.0.0.1:3000. The default user and password are admin. Change the password upon logging in. Once
    inside the console, select the `Evidently Data Drift Dashboard` from the search bar, and wait for a few seconds for the data to
    refresh as the window size is 50. Once done hit `Ctrl + C` to stop the application.
 
@@ -174,14 +168,14 @@ Once done, you can shutdown the docker services
 3. Run integration tests
 
     ```
-    run_integration_tests
+    make run_integration_tests
     ```
     These will test both the training pipeline and the prediction services
 
 4. Run quality checks
 
     ```
-    quality_checks
+    make quality_checks
     ```
     Runs the `isort`, `black` and `pylint` on the `scripts` folder
 
