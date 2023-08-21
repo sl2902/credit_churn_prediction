@@ -117,7 +117,6 @@ The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-c
 
     ```
     make train
-
     ```
 
 3.  Once ready, restart the docker service
