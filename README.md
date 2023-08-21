@@ -103,9 +103,9 @@ the model inside a docker container are listed below:
     ```
     This will used the model that has already been trained, and which is stored on disk
 
-6. Launch grafana at http://127.0.0.1:3000. The default user and password are grafana. Change the password upon logging in. Once
-   inside the console, select the `Evidently Data Drift Dashboard` and wait for a few seconds for the data to refresh as the window
-   size is 50.
+6. Launch grafana at http://127.0.0.1:3000. The default user and password are admin. Change the password upon logging in. Once
+   inside the console, select the `Evidently Data Drift Dashboard` from the search bar, and wait for a few seconds for the data to
+   refresh as the window size is 50. Once done hit `Ctrl + C` to stop the application.
 
     ![Grafana dashboard](assets/grafana_dashboard.png)
 
