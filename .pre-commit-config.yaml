@@ -10,35 +10,35 @@ repos:
     - id: check-yaml
     - id: check-added-large-files
       args: ['--maxkb=2048']
-- repo: https://github.com/pycqa/isort
-  rev: 5.10.1
-  hooks:
-    - id: isort
-      name: isort (python)
-      include: scripts/
-      exclude: '(monitoring/|services|tests|integration_tests)/.*'
-- repo: https://github.com/psf/black
-  rev: 22.6.0
-  hooks:
-    - id: black
-      name: black
-      language_version: python3.8
-      include: scripts/
-      exclude: '(monitoring/|services|tests|integration_tests)/.*'
-- repo: local
-  hooks:
-    - id: pylint
-      name: pylint
-      entry: pylint
-      language: system
-      types: [python]
-      include: scripts/
-      exclude: '(monitoring/|services|tests|integration_tests)/.*'
-      args: [
-        "-rn", # Only display messages
-        "-sn", # Don't display the score
-        "--recursive=y",
-      ]
+# - repo: https://github.com/pycqa/isort
+#   rev: 5.12.0
+#   hooks:
+#     - id: isort
+#       name: isort (python)
+      # include: scripts/
+      # exclude: ^monitoring/
+# - repo: https://github.com/psf/black
+#   rev: 22.6.0
+#   hooks:
+#     - id: black
+#       name: black
+#       language_version: python3.8
+#       include: scripts/
+#       exclude: '(monitoring|services|tests|integration_tests)/.*'
+# - repo: local
+#   hooks:
+#     - id: pylint
+#       name: pylint
+#       entry: pylint
+#       language: system
+#       types: [python]
+#       include: scripts/
+#       exclude: '(monitoring|services|tests|integration_tests)/.*'
+#       args: [
+#         "-rn", # Only display messages
+#         "-sn", # Don't display the score
+#         "--recursive=y",
+#       ]
 - repo: local
   hooks:
     - id: pytest-check

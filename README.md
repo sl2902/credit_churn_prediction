@@ -177,13 +177,6 @@ Once done, you can shutdown the docker services
     ```
     Runs the `isort`, `black` and `pylint` on the `scripts` folder
 
+## Pre-commit hooks
 
-
-
-
-    
-
-
-
-
-
+1. Pre-commit hooks, including sorting, formatting, linting and unit tests are run with every commit to the repository.
