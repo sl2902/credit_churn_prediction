@@ -95,7 +95,7 @@ the model inside a docker container are listed below:
     ```
     make post_request
     ```
-    This will used the model that has already been trained, and which is stored on disk
+    This will fetch the model which is stored on disk
 
 5. Launch grafana at http://127.0.0.1:3000. The default user and password are admin. Change the password upon logging in. Once
    inside the console, select the `Evidently Data Drift Dashboard` from the search bar, and wait for a few seconds for the data to
