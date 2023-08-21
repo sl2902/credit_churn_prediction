@@ -1,0 +1,27 @@
+#vscode
+hw6/.vscode
+
+#pytest_cache
+hw6/.pytest_cache
+hw6/__*
+
+#pycache
+hw6/scripts/__pycache__
+
+#macos
+.DS_Store
+
+# data
+data/
+
+# mlflow
+artifacts/
+output/
+hw2/mlruns/
+hw2/mlflow.db
+hw3/mlflow.db
+hw3/models/
+mlflow.db
+
+# deploy
+hw4/models/

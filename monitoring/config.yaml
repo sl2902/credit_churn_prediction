@@ -1,0 +1,27 @@
+datasets:
+  churn:
+    column_mapping:
+      # categorical_features:
+      #   - 'education_level'
+      #   - 'income_category'
+      numerical_features:
+        - 'credit_limit'
+        - 'total_revolving_bal'
+        - 'customer_age'
+        - 'education_level'
+        - 'income_category'
+      # target:
+      #   - 'prediction'
+    monitors: 
+      - data_drift
+    data_format:
+      header: true
+      separator: ','
+    reference_file: ./datasets/reference_data.csv
+service:
+  calculation_period_sec: 2
+  min_reference_size: 30
+  moving_reference: false
+  datasets_path: datasets
+  use_reference: true
+  window_size: 50

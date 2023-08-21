@@ -1,0 +1,29 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.8.3
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.0
+mlflow_version: 2.6.0
+model_uuid: 455b5052a70e4aa1bc03911bd4e15a74
+run_id: bff8f07f1a5c4a779c7d5120cc0f4987
+signature:
+  inputs: '[{"type": "double", "name": "card_category"}, {"type": "double", "name":
+    "credit_limit"}, {"type": "double", "name": "customer_age"}, {"type": "double",
+    "name": "dependent_count"}, {"type": "double", "name": "education_level"}, {"type":
+    "double", "name": "gender=F"}, {"type": "double", "name": "gender=M"}, {"type":
+    "double", "name": "income_category"}, {"type": "double", "name": "marital_status"},
+    {"type": "double", "name": "months_on_book"}, {"type": "double", "name": "total_relationship_count"},
+    {"type": "double", "name": "total_revolving_bal"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2023-08-16 20:40:21.561038'
