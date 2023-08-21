@@ -54,7 +54,7 @@ the emphasis was less on feature engineering and hyperparameter tuning and more 
 
 ### Model serving
 
-The MLOps pipeline is fully dockerised and can be easily deployed via the following steps:
+The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-compose) and can be easily deployed via the following steps:
 
 1. Clone the `capstone` repository locally:
 
