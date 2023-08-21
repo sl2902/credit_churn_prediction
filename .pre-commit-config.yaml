@@ -10,13 +10,13 @@ repos:
     - id: check-yaml
     - id: check-added-large-files
       args: ['--maxkb=2048']
-# - repo: https://github.com/pycqa/isort
-#   rev: 5.12.0
-#   hooks:
-#     - id: isort
-#       name: isort (python)
-      # include: scripts/
-      # exclude: ^monitoring/
+- repo: https://github.com/pycqa/isort
+  rev: 5.12.0
+  hooks:
+    - id: isort
+      name: isort (python)
+      include: scripts/
+      exclude: '(monitoring|services|tests|integration_tests)/.*'
 - repo: https://github.com/psf/black
   rev: 22.6.0
   hooks:
