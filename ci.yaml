@@ -26,12 +26,12 @@ jobs:
         run: pip install pipenv && pipenv install --dev
 
       - name: Run Unit tests
-        working-directory: "."
+        # working-directory: "."
         run: make unit_tests
-      
+
       - name: Run quality checks
         run: make quality_checks
-      
+
       - name: Run docker integration
         run: make run_docker_integration
 
