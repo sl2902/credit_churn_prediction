@@ -17,14 +17,14 @@ repos:
 #       name: isort (python)
       # include: scripts/
       # exclude: ^monitoring/
-# - repo: https://github.com/psf/black
-#   rev: 22.6.0
-#   hooks:
-#     - id: black
-#       name: black
-#       language_version: python3.8
-#       include: scripts/
-#       exclude: '(monitoring|services|tests|integration_tests)/.*'
+- repo: https://github.com/psf/black
+  rev: 22.6.0
+  hooks:
+    - id: black
+      name: black
+      language_version: python3.8
+      include: scripts/
+      exclude: '(monitoring|services|tests|integration_tests)/.*'
 - repo: local
   hooks:
     - id: pylint
