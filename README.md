@@ -56,28 +56,20 @@ the emphasis was less on feature engineering and hyperparameter tuning and more 
 
 The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-compose) and can be easily deployed via the following steps:
 
-1. Clone the `capstone` repository locally:
+1. Clone the `credit_churn_predicton` repository locally:
 
     ```
-    git clone https://github.com/sl2902/mlops-zoomcamp.git
+    git clone https://github.com/sl2902/credit_churn_prediction.git
     ```
 
-2. If you would like to only clone the `capstone` subdirectory, then run the following commands. Note: this requires git version >= 2.30.0
+2. Prepare your environment to run the pipeline:
 
     ```
-    git clone --depth 1 --filter=blob:none --sparse https://github.com/sl2902/mlops-zoomcamp.git;
-    cd mlops-zoomcamp;
-    git sparse-checkout set capstone
-    ```
-
-3. Prepare your environment to run the pipeline:
-
-    ```
-    cd capstone
+    cd credit_churn_prediction
     make setup
     ```
 
-4. Build and launch the MLOps pipeline:
+3. Build and launch the MLOps pipeline:
 
     ```
     make build
@@ -97,14 +89,16 @@ The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-c
     |mlflow_db  				  |     5432|Postgres database						  |
     |capstone_mongo_1             |    27018|Mongo database							  |
 
-5. Send traffic to the app service
+4. Send traffic to the app service
 
     ```
     make post_request
     ```
     This will used the model that has already been trained, and which is stored on disk
 
-6. Launch grafana at http://127.0.0.1:3000
+5. Launch grafana at http://127.0.0.1:3000
+
+    <img src="assets/MLOps_architecture.drawio.png" width="100%"/>
 
 
 ## Training and deployment
@@ -136,8 +130,6 @@ The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-c
     ```
     make post_request
     ```
-
-<img src="assets/MLOps_architecture.drawio.png" width="100%"/>
 
 ## Shutdown
 
