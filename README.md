@@ -98,7 +98,7 @@ The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-c
 
 5. Launch grafana at http://127.0.0.1:3000
 
-    <img src="assets/MLOps_architecture.drawio.png" width="100%"/>
+    ![MLOps architecture](assets/MLOps_architecture.drawio.png)
 
 
 ## Training and deployment
