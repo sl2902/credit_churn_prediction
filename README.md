@@ -108,8 +108,8 @@ The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-c
     ```
     make deployment
     ```
-    This will create a remote storage using Minio services, followed by deploying and applying the orchestration pipeline,
-    which is scheduled to run daily at midnight. The agent is started to pick up any queued jobs.
+    This creates a remote storage using Minio services, deploys and applies the orchestration pipeline,
+    which is scheduled to run daily at midnight and starts the agent so that queued jobs are fetched.
 
 2. Executes the training workflow, which includes reading a subset of the dataset stored in `data` folder, transforming the
     required attributes, splitting the dataset into various susbets, pickling the prepared subsets, and carrying out experimenting
@@ -192,6 +192,6 @@ Once done, you can shutdown the docker services
 
 ## References
 
-[1] https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK
-[2] https://github.com/minio/blog-assets/tree/main
+[1] https://www.youtube.com/playlist?list=PL3MmuxUbc_hIUISrluw_A7wDSmfOhErJK<br>
+[2] https://github.com/minio/blog-assets/tree/main<br>
 [3] https://github.com/evidentlyai/evidently/tree/main/examples/integrations/grafana_monitoring_service
