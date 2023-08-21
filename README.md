@@ -50,7 +50,7 @@ the emphasis was less on feature engineering and hyperparameter tuning and more 
 
 ### Architecture
 
-<img src="assets/MLOps_architecture.png" width="100%"/>
+![MLOps architecture](assets/MLOps_architecture.png)
 
 ### Model serving
 
@@ -90,18 +90,24 @@ the model inside a docker container are listed below:
     |mlflow_db  				  |     5432|Postgres database						  |
     |capstone_mongo_1             |    27018|Mongo database							  |
 
-4. Send traffic to the app service
+4. Run the flow
+
+    ```
+    make train
+    ```
+
+5. Send traffic to the app service
 
     ```
     make post_request
     ```
     This will used the model that has already been trained, and which is stored on disk
 
-5. Launch grafana at http://127.0.0.1:3000. The default user and password are grafana. Change the password upon logging in. Once
+6. Launch grafana at http://127.0.0.1:3000. The default user and password are grafana. Change the password upon logging in. Once
    inside the console, select the `Evidently Data Drift Dashboard` and wait for a few seconds for the data to refresh as the window
    size is 50.
 
-    ![MLOps architecture](assets/MLOps_architecture.drawio.png)
+    ![Grafana dashboard](assets/grafana_dashboard.png)
 
 
 ## Training and deployment
