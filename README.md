@@ -137,6 +137,8 @@ The MLOps pipeline is fully dockerised (Make sure to install Docker and docker-c
     make post_request
     ```
 
+<img src="assets/MLOps_architecture.drawio.png" width="100%"/>
+
 ## Shutdown
 
 Once done, you can shutdown the docker services
