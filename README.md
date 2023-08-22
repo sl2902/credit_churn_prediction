@@ -185,7 +185,7 @@ Once done, you can shutdown the docker services
 
 ## CI/CD
 
-1. A git pull will trigger the CI pipeline; it does the following:
+1. A pull request will trigger the CI pipeline; it does the following:
 
    - Prepares the environment and install the dependencies
    - Runs the unit tests
